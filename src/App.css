@@ -1,0 +1,46 @@
+.Game {
+  text-align: center;
+}
+.Board {
+  width: 250px;
+  height: 250px;  
+  position: relative;
+}
+.Board .square {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border: 1px solid black;
+  line-height: 50px;
+  box-sizing: border-box;
+}
+.Board .square.bottom-row {
+  margin-top: 150px;  
+}
+.Board .square.left-col {
+  position: absolute;
+  left: 0;
+}
+.Board .square.right-col {
+  position: absolute;
+  right: 0;
+}
+.Board .square.row-2 {
+  top: 50px;  
+}
+.Board .square.row-3 {
+  top: 100px;  
+}
+.Board .square.row-4 {
+  top: 150px;  
+}
+.Piece {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: left 1s linear, top 1s linear;
+}
